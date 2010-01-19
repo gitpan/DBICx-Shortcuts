@@ -1,5 +1,7 @@
 package Schema::Result::Printings;
-our $VERSION = '0.001';
+our $VERSION = '0.002';
+
+
 use parent 'DBIx::Class';
 
 __PACKAGE__->load_components('Core');

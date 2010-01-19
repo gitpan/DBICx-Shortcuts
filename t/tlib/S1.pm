@@ -1,5 +1,7 @@
 package S1;
-our $VERSION = '0.001';
+our $VERSION = '0.002';
+
+
 use parent 'DBICx::Shortcuts';
 
 __PACKAGE__->setup('Schema');

@@ -2,7 +2,7 @@
 abstract: 'Setup a class with shortcut methods to the sources of a DBIx::Class-based schema'
 author:
   - 'Pedro Melo <melo@cpan.org>'
-generated_by: 'Dist::Zilla version 1.093400'
+generated_by: 'Dist::Zilla version 1.093000'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -14,6 +14,7 @@ requires:
   File::Temp: 0
   Test::Exception: 0
   Test::More: 0.92
+  parent: 0
 resources:
   repository: http://github.com/melo/dbicx-shortcuts/
-version: 0.001
+version: 0.002
