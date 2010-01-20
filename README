@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution DBICx-Shortcuts, version
-0.002:
+0.003:
 
   Setup a class with shortcut methods to the sources of a DBIx::Class-based schema
 

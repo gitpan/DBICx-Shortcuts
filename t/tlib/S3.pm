@@ -1,5 +1,5 @@
 package S3;
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 
 use parent 'DBICx::Shortcuts';
