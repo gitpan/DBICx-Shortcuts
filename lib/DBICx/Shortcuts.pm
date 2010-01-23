@@ -1,7 +1,5 @@
 package DBICx::Shortcuts;
-our $VERSION = '0.003';
-
-
+our $VERSION = '0.004';
 
 use strict;
 use warnings;
@@ -77,14 +75,11 @@ DBICx::Shortcuts - Setup a class with shortcut methods to the sources of a DBIx:
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
   package S;
-our $VERSION = '0.003';
-
-
   use parent 'DBICx::Shortcuts';
   
   __PACKAGE__->setup('Class::Of::Your::Schema');
@@ -148,9 +143,6 @@ and have it return all the required connect() parameters.
 =head2 setup()
 
     package MyShortcutsClass;
-our $VERSION = '0.003';
-
-
     __PACKAGE__->setup('MySchemaClass');
 
 The L</setup()> accepts your schema class as a parameter, loads it, and

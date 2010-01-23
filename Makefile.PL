@@ -2,6 +2,8 @@
 use strict;
 use warnings;
 
+
+
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
@@ -9,7 +11,7 @@ WriteMakefile(
   NAME      => 'DBICx::Shortcuts',
   AUTHOR    => "Pedro\ Melo\ \<melo\@cpan\.org\>",
   ABSTRACT  => "Setup\ a\ class\ with\ shortcut\ methods\ to\ the\ sources\ of\ a\ DBIx\:\:Class\-based\ schema",
-  VERSION   => '0.003',
+  VERSION   => '0.004',
   EXE_FILES => [ qw() ],
   (eval { ExtUtils::MakeMaker->VERSION(6.31) } ? (LICENSE => 'perl') : ()),
   PREREQ_PM    => {
