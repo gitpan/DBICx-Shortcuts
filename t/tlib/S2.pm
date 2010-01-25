@@ -1,5 +1,5 @@
 package S2;
-our $VERSION = '0.004';
+our $VERSION = '0.005';
 use parent 'DBICx::Shortcuts';
 
 sub connect_info {}
