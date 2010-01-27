@@ -17,6 +17,7 @@ t/tlib/S1.pm
 t/tlib/S2.pm
 t/tlib/S3.pm
 t/tlib/Schema.pm
+t/tlib/Schema/Result/Mecenas.pm
 t/tlib/Schema/Result/MyAuthors.pm
 t/tlib/Schema/Result/MyBooks.pm
 t/tlib/Schema/Result/Printings.pm

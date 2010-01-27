@@ -1,5 +1,5 @@
 package Schema::Result::MyBooks;
-our $VERSION = '0.005';
+our $VERSION = '0.006';
 use parent 'DBIx::Class::ResultSource';
 
 __PACKAGE__->load_components('Core');

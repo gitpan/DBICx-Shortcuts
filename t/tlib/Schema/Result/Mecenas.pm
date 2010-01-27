@@ -1,12 +1,12 @@
-package Schema::Result::Printings;
+package Schema::Result::Mecenas;
 our $VERSION = '0.006';
 use parent 'DBIx::Class';
 
 __PACKAGE__->load_components('Core');
-__PACKAGE__->table('printings');
+__PACKAGE__->table('mecenas');
 
 __PACKAGE__->source_info({
-  skip_shortcut => 1,
+  shortcut => undef,
 });
 
 __PACKAGE__->add_columns(qw(id));

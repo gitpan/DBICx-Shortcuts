@@ -17,4 +17,4 @@ requires:
   parent: 0
 resources:
   repository: http://github.com/melo/dbicx-shortcuts/
-version: 0.005
+version: 0.006

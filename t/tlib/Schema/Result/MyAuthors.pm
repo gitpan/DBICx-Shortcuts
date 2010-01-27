@@ -1,5 +1,5 @@
 package Schema::Result::MyAuthors;
-our $VERSION = '0.005';
+our $VERSION = '0.006';
 use parent 'DBIx::Class';
 
 __PACKAGE__->load_components('Core');

@@ -1,5 +1,5 @@
 package S1;
-our $VERSION = '0.005';
+our $VERSION = '0.006';
 use parent 'DBICx::Shortcuts';
 
 __PACKAGE__->setup('Schema', 'txn_do', 'storage');

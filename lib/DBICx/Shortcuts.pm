@@ -1,5 +1,5 @@
 package DBICx::Shortcuts;
-our $VERSION = '0.005';
+our $VERSION = '0.006';
 
 use strict;
 use warnings;
@@ -19,8 +19,12 @@ sub setup {
     my $info = $schema->source($source)->source_info;
     next SOURCE if exists $info->{skip_shortcut} && $info->{skip_shortcut};
 
-    my $method = $info->{shortcut};
-    if (!$method) {
+    my $method;
+    if (exists $info->{shortcut}) {
+      $method = $info->{shortcut};
+      next SOURCE unless defined $method;
+    }
+    else {
       $method = $source;
       $method =~ s/.+::(.+)$/$1/; ## deal with nested sources
       $method =~ s/([a-z])([A-Z])/${1}_$2/g;
@@ -82,7 +86,7 @@ DBICx::Shortcuts - Setup a class with shortcut methods to the sources of a DBIx:
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 SYNOPSIS
 
@@ -174,9 +178,13 @@ The following keys are supported:
 
 Defines the name of the shortcut to create for this source.
 
+If the shortcut is declared as C<undef>, no shortcut wil be created for this source.
+
 =item skip_shortcut
 
 If true, disables the creation of a shortcut key for this source.
+
+This is available as a more explicit alternative to setting the C<shortcut> key to C<undef>.
 
 =back
 
