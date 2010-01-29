@@ -1,5 +1,5 @@
 package Schema::Result::Mecenas;
-our $VERSION = '0.006';
+our $VERSION = '0.007';
 use parent 'DBIx::Class';
 
 __PACKAGE__->load_components('Core');

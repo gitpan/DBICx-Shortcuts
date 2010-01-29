@@ -1,5 +1,5 @@
 package S3;
-our $VERSION = '0.006';
+our $VERSION = '0.007';
 use parent 'DBICx::Shortcuts';
 use File::Temp qw( tmpnam );
 
